@@ -1,0 +1,4 @@
+h11==0.12.0
+rfc3986[idna2008]==1.4.0
+gunicorn
+justpy
