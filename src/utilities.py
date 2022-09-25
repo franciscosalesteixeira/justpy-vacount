@@ -14,12 +14,12 @@ def make_request(query, variables):
 
 def write_list(set):
 
-    with open("aux.txt", "a") as f: 
+    with open("valist.txt", "a") as f: 
         f.write("%s: \n" % (set))
 
 def write_file(set):
 
-    with open("aux.txt", "w") as f: 
+    with open("valist.txt", "w") as f: 
 
         list = ""
         
@@ -37,11 +37,11 @@ def write_file(set):
 
             f.write("\n")
 
-    format("aux.txt")
+    format("valist.txt")
 
 def format(file):
 
-    with open('aux.txt', 'r') as file :
+    with open('valist.txt', 'r') as file :
         
         filedata = file.read()
 
@@ -50,5 +50,5 @@ def format(file):
         filedata = filedata.replace("]", "")
         filedata = filedata.replace(", ", "\t")
 
-    with open('aux.txt', 'w') as file:
+    with open('valist.txt', 'w') as file:
         file.write(filedata)
