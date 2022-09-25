@@ -8,9 +8,11 @@ This project uses a different number of tools:
 
 - [**JustPy**](https://justpy.io/) - An object-oriented, component based, high-level Python Web Framework
 - [**Tailwind CSS**](https://tailwindcss.com/) - A utility-first CSS framework
-- [**Gunicorn**](https://gunicorn.org/) - A Python WSGI HTTP Server for UNIX
-- [**Render**](https://render.com/) - Cloud application hosting for developers
 - [**AniList's GraphQL API**](https://github.com/AniList/ApiV2-GraphQL-Docs) - Provides quick and powerful access to over 500k anime and manga entries, including character, staff, and live airing data
+- [**Render**](https://render.com/) - Cloud application hosting for developers
+- [**Gunicorn**](https://gunicorn.org/) - A Python WSGI HTTP Server for UNIX
+
+The website is developed using the JustPy framework, with the help of Tailwind CSS components to build the overall look. AniList's API is used to obtain some of the user's public data - particularly their list - as well as images and links pertaining to characters and voice actors. The project is deployed on the Render platform, which uses Gunicorn to properly run the application. 
 
 ## Installing requirements
 
